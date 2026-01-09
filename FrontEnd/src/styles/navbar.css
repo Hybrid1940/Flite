@@ -1,0 +1,62 @@
+/* ===== Navbar Styles ===== */
+
+/* Main Navbar Container */
+.navbar {
+  @apply bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm sticky top-0 z-50;
+}
+
+.navbar-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6;
+}
+
+.navbar-inner {
+  @apply flex items-center justify-between h-16;
+}
+
+/* Brand/Logo */
+.navbar-brand {
+  @apply text-xl sm:text-2xl font-bold tracking-tight text-gray-900 hover:text-sky-600 transition-colors;
+}
+
+/* Navigation Links Container */
+.navbar-links {
+  @apply flex items-center gap-1;
+}
+
+/* Navigation Link Base */
+.navbar-link {
+  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-all;
+}
+
+.navbar-link-default {
+  @apply text-gray-700 hover:bg-gray-100 hover:text-sky-600;
+}
+
+.navbar-link-active {
+  @apply bg-sky-100 text-sky-700;
+}
+
+/* Navigation Button (non-link) */
+.navbar-button {
+  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-sky-600 transition-all;
+}
+
+/* Icon-only Button (Settings) */
+.navbar-button-icon {
+  @apply flex items-center justify-center w-10 h-10 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-sky-600 transition-all;
+}
+
+/* Logout Button */
+.navbar-button-logout {
+  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 transition-all ml-1 sm:ml-2;
+}
+
+/* Icon Sizing */
+.navbar-icon {
+  @apply w-5 h-5;
+}
+
+/* Responsive Text Hiding */
+.navbar-text-responsive {
+  @apply hidden sm:inline;
+}

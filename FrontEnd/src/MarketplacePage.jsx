@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { HiSearch } from "react-icons/hi";
+import Navbar from "./components/Navbar";
 import PilotList from "./components/PilotList";
 import FilterButton from "./components/FilterButton";
 
@@ -9,8 +10,11 @@ function MarketplacePage() {
 
   return (
     <div className="min-h-screen bg-gradient-page">
+      {/* Navbar */}
+      <Navbar />
+
       {/* Header Section */}
-      <div className="section-header">
+      <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 shadow-sm">
         <div className="section-container">
           <div className="mb-6">
             <h1 className="section-title">
