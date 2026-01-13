@@ -1,0 +1,271 @@
+/* ===== My Instructors Page Styles ===== */
+
+.my-instructors-page {
+  @apply min-h-screen;
+}
+
+.my-instructors-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 py-8;
+}
+
+/* Header */
+.my-instructors-header {
+  @apply mb-8;
+}
+
+.my-instructors-title {
+  @apply text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2;
+}
+
+.my-instructors-subtitle {
+  @apply text-base sm:text-lg text-gray-600;
+}
+
+/* Summary Cards */
+.my-instructors-summary {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8;
+}
+
+.my-instructors-summary-card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-4 flex items-center gap-4;
+}
+
+.my-instructors-summary-icon-wrapper {
+  @apply w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0;
+}
+
+.my-instructors-summary-icon-primary {
+  @apply bg-sky-100 text-sky-600;
+}
+
+.my-instructors-summary-icon-success {
+  @apply bg-emerald-100 text-emerald-600;
+}
+
+.my-instructors-summary-icon-warning {
+  @apply bg-amber-100 text-amber-600;
+}
+
+.my-instructors-summary-icon-info {
+  @apply bg-blue-100 text-blue-600;
+}
+
+.my-instructors-summary-icon {
+  @apply w-6 h-6;
+}
+
+.my-instructors-summary-content {
+  @apply flex flex-col;
+}
+
+.my-instructors-summary-value {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.my-instructors-summary-label {
+  @apply text-sm text-gray-600;
+}
+
+/* Instructor Card */
+.my-instructors-list {
+  @apply space-y-6;
+}
+
+.my-instructor-card {
+  @apply bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden;
+}
+
+.my-instructor-header {
+  @apply bg-gradient-to-r from-sky-500 to-blue-600 p-6 text-white;
+}
+
+.my-instructor-header-content {
+  @apply flex items-start justify-between;
+}
+
+.my-instructor-name {
+  @apply text-2xl font-bold mb-2;
+}
+
+.my-instructor-badges {
+  @apply flex flex-wrap gap-2;
+}
+
+.my-instructor-badge {
+  @apply px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-semibold border border-white/30;
+}
+
+.my-instructor-rating {
+  @apply flex items-center;
+}
+
+.my-instructor-rating-value {
+  @apply text-lg font-semibold;
+}
+
+.my-instructor-content {
+  @apply p-6 space-y-6;
+}
+
+/* Course Info */
+.my-instructor-course {
+  @apply pb-4 border-b border-gray-200;
+}
+
+.my-instructor-course-title {
+  @apply text-xl font-semibold text-gray-900 mb-1;
+}
+
+.my-instructor-course-detail {
+  @apply text-sm text-gray-600;
+}
+
+/* Progress Section */
+.my-instructor-progress-section {
+  @apply space-y-2;
+}
+
+.my-instructor-progress-header {
+  @apply flex items-center justify-between;
+}
+
+.my-instructor-progress-label {
+  @apply text-sm font-medium text-gray-700;
+}
+
+.my-instructor-progress-percentage {
+  @apply text-sm font-semibold text-sky-600;
+}
+
+.my-instructor-progress-bar {
+  @apply w-full h-3 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.my-instructor-progress-fill {
+  @apply h-full bg-gradient-to-r from-sky-500 to-blue-600 transition-all duration-500;
+}
+
+/* Metrics */
+.my-instructor-metrics {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.my-instructor-metric {
+  @apply flex items-center gap-4 p-4 bg-gray-50 rounded-lg;
+}
+
+.my-instructor-metric-icon {
+  @apply w-8 h-8 text-sky-600 flex-shrink-0;
+}
+
+.my-instructor-metric-content {
+  @apply flex flex-col;
+}
+
+.my-instructor-metric-value {
+  @apply text-xl font-bold text-gray-900;
+}
+
+.my-instructor-metric-label {
+  @apply text-sm text-gray-600;
+}
+
+.my-instructor-metric-remaining {
+  @apply text-xs text-gray-500 mt-1;
+}
+
+/* Cost Section */
+.my-instructor-cost-section {
+  @apply p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border border-amber-200;
+}
+
+.my-instructor-cost-header {
+  @apply flex items-center gap-2 mb-3;
+}
+
+.my-instructor-cost-icon {
+  @apply w-5 h-5 text-amber-600;
+}
+
+.my-instructor-cost-title {
+  @apply text-sm font-semibold text-gray-900;
+}
+
+.my-instructor-cost-details {
+  @apply space-y-2;
+}
+
+.my-instructor-cost-item {
+  @apply flex items-center justify-between text-sm;
+}
+
+.my-instructor-cost-item-remaining {
+  @apply pt-2 border-t border-amber-200 font-semibold;
+}
+
+.my-instructor-cost-label {
+  @apply text-gray-700;
+}
+
+.my-instructor-cost-value {
+  @apply font-semibold text-gray-900;
+}
+
+.my-instructor-cost-value-paid {
+  @apply font-semibold text-emerald-600;
+}
+
+.my-instructor-cost-value-remaining {
+  @apply text-lg text-amber-700;
+}
+
+/* Next Lesson */
+.my-instructor-next-lesson {
+  @apply flex items-center gap-3 p-4 bg-blue-50 rounded-lg border border-blue-200;
+}
+
+.my-instructor-next-lesson-icon {
+  @apply w-5 h-5 text-blue-600 flex-shrink-0;
+}
+
+.my-instructor-next-lesson-content {
+  @apply flex flex-col;
+}
+
+.my-instructor-next-lesson-label {
+  @apply text-xs text-gray-600 mb-1;
+}
+
+.my-instructor-next-lesson-date {
+  @apply text-sm font-semibold text-gray-900;
+}
+
+/* Actions */
+.my-instructor-actions {
+  @apply flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200;
+}
+
+.my-instructor-button-primary {
+  @apply flex-1 px-6 py-3 rounded-lg bg-sky-600 text-white font-semibold hover:bg-sky-700 transition-all text-center focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2;
+}
+
+.my-instructor-button-secondary {
+  @apply flex-1 px-6 py-3 rounded-lg border border-gray-300 font-semibold text-gray-700 hover:bg-gray-50 transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+}
+
+/* Empty State */
+.my-instructors-empty {
+  @apply text-center py-16 bg-white rounded-2xl shadow-sm border border-gray-200;
+}
+
+.my-instructors-empty-icon {
+  @apply mx-auto w-16 h-16 text-gray-400 mb-4;
+}
+
+.my-instructors-empty-title {
+  @apply text-xl font-semibold text-gray-900 mb-2;
+}
+
+.my-instructors-empty-text {
+  @apply text-gray-600 max-w-md mx-auto;
+}

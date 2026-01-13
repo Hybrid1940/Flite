@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
+  const navigate = useNavigate();
+
+  const handleLogIn = () => {
+    navigate("/marketplace");
+  };
+
   return (
     <div className="min-h-screen bg-gradient-landing text-gray-900">
       {/* Navbar */}
@@ -18,7 +25,7 @@ export default function LandingPage() {
           <button className="btn-nav">
             Pricing
           </button>
-          <button className="btn-nav-primary">
+          <button className="btn-nav-primary" onClick={handleLogIn}>
             Log In
           </button>
         </div>

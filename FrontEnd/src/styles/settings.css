@@ -1,0 +1,127 @@
+/* ===== Settings Page Styles ===== */
+
+.settings-page {
+  @apply min-h-screen ;
+}
+
+.settings-container {
+  @apply max-w-4xl mx-auto px-4 sm:px-6 py-8;
+}
+
+.settings-header {
+  @apply mb-8;
+}
+
+.settings-title {
+  @apply text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2;
+}
+
+.settings-subtitle {
+  @apply text-base sm:text-lg text-gray-600;
+}
+
+.settings-content {
+  @apply space-y-6;
+}
+
+/* Settings Section */
+.settings-section {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden;
+}
+
+.settings-section-header {
+  @apply px-6 py-4 border-b border-gray-200 bg-gray-50;
+}
+
+.settings-section-title-wrapper {
+  @apply flex items-center gap-3;
+}
+
+.settings-section-icon {
+  @apply w-6 h-6 text-sky-600;
+}
+
+.settings-section-title {
+  @apply text-xl font-semibold text-gray-900;
+}
+
+.settings-section-content {
+  @apply px-6 py-6 space-y-6;
+}
+
+/* Toggle Switch */
+.settings-toggle-group {
+  @apply flex items-center justify-between py-4;
+}
+
+.settings-toggle-info {
+  @apply flex-1;
+}
+
+.settings-toggle-label {
+  @apply block text-sm font-medium text-gray-900 mb-1;
+}
+
+.settings-toggle-description {
+  @apply text-sm text-gray-500;
+}
+
+.settings-toggle {
+  @apply relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2;
+}
+
+.settings-toggle-active {
+  @apply bg-sky-600;
+}
+
+.settings-toggle-slider {
+  @apply inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-1;
+}
+
+.settings-toggle-active .settings-toggle-slider {
+  @apply translate-x-6;
+}
+
+/* Form Styles */
+.settings-form {
+  @apply space-y-4;
+}
+
+.settings-form-group {
+  @apply space-y-2;
+}
+
+.settings-form-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.settings-form-input-wrapper {
+  @apply relative;
+}
+
+.settings-form-icon {
+  @apply absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400;
+}
+
+.settings-form-input {
+  @apply w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all bg-white text-gray-900 placeholder-gray-400;
+}
+
+.settings-form-select {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all bg-white text-gray-900;
+}
+
+.settings-form-button {
+  @apply px-6 py-3 rounded-lg bg-sky-600 text-white font-semibold hover:bg-sky-700 transition-all focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .settings-toggle-group {
+    @apply flex-col items-start gap-3;
+  }
+
+  .settings-toggle {
+    @apply self-end;
+  }
+}

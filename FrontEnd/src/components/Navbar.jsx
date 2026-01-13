@@ -1,24 +1,18 @@
 import { HiCog, HiUser, HiUserGroup, HiLogout } from "react-icons/hi";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/navbar.css";
 
 function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const isActive = (path) => location.pathname === path;
 
   const handleLogout = () => {
-    // TODO: Implement logout functionality
-    console.log("Logout clicked");
+    navigate("/");
   };
 
   const handleSettings = () => {
-    // TODO: Implement settings functionality
-    console.log("Settings clicked");
-  };
-
-  const handleMyInstructors = () => {
-    // TODO: Implement my instructors functionality
-    console.log("My Instructors clicked");
+    navigate("/settings");
   };
 
   return (
@@ -44,13 +38,17 @@ function Navbar() {
               <span className="navbar-text-responsive">Explore Pilots</span>
             </Link>
             
-            <button
-              onClick={handleMyInstructors}
-              className="navbar-button"
+            <Link
+              to="/my-instructors"
+              className={`navbar-link ${
+                isActive("/my-instructors")
+                  ? "navbar-link-active"
+                  : "navbar-link-default"
+              }`}
             >
               <HiUserGroup className="navbar-icon" />
               <span className="navbar-text-responsive">My Instructors</span>
-            </button>
+            </Link>
 
             <Link
               to="/profile"
