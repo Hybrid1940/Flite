@@ -5,20 +5,7 @@
 }
 
 .my-instructors-container {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 py-8;
-}
-
-/* Header */
-.my-instructors-header {
-  @apply mb-8;
-}
-
-.my-instructors-title {
-  @apply text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2;
-}
-
-.my-instructors-subtitle {
-  @apply text-base sm:text-lg text-gray-600;
+  @apply py-8;
 }
 
 /* Summary Cards */
@@ -72,7 +59,7 @@
 }
 
 .my-instructor-card {
-  @apply bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden;
+  @apply bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700 overflow-hidden transition-all duration-300 hover:shadow-md dark:hover:shadow-lg;
 }
 
 .my-instructor-header {
@@ -80,11 +67,11 @@
 }
 
 .my-instructor-header-content {
-  @apply flex items-start justify-between;
+  @apply flex items-start justify-between relative z-10;
 }
 
 .my-instructor-name {
-  @apply text-2xl font-bold mb-2;
+  @apply text-2xl font-bold mb-2 text-white;
 }
 
 .my-instructor-badges {
@@ -92,11 +79,11 @@
 }
 
 .my-instructor-badge {
-  @apply px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-semibold border border-white/30;
+  @apply px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-semibold border border-white/30 text-white;
 }
 
 .my-instructor-rating {
-  @apply flex items-center;
+  @apply flex items-center text-white;
 }
 
 .my-instructor-rating-value {
@@ -109,15 +96,15 @@
 
 /* Course Info */
 .my-instructor-course {
-  @apply pb-4 border-b border-gray-200;
+  @apply pb-4 border-b border-gray-200 dark:border-slate-700;
 }
 
 .my-instructor-course-title {
-  @apply text-xl font-semibold text-gray-900 mb-1;
+  @apply text-xl font-semibold text-gray-900 dark:text-gray-50 mb-1;
 }
 
 .my-instructor-course-detail {
-  @apply text-sm text-gray-600;
+  @apply text-sm text-gray-600 dark:text-gray-400;
 }
 
 /* Progress Section */
@@ -130,15 +117,15 @@
 }
 
 .my-instructor-progress-label {
-  @apply text-sm font-medium text-gray-700;
+  @apply text-sm font-medium text-gray-700 dark:text-gray-300;
 }
 
 .my-instructor-progress-percentage {
-  @apply text-sm font-semibold text-sky-600;
+  @apply text-sm font-semibold text-sky-600 dark:text-sky-400;
 }
 
 .my-instructor-progress-bar {
-  @apply w-full h-3 bg-gray-200 rounded-full overflow-hidden;
+  @apply w-full h-3 bg-gray-200 dark:bg-slate-700 rounded-full overflow-hidden;
 }
 
 .my-instructor-progress-fill {
@@ -151,11 +138,11 @@
 }
 
 .my-instructor-metric {
-  @apply flex items-center gap-4 p-4 bg-gray-50 rounded-lg;
+  @apply flex items-center gap-4 p-4 bg-gray-50 dark:bg-slate-700/50 rounded-lg;
 }
 
 .my-instructor-metric-icon {
-  @apply w-8 h-8 text-sky-600 flex-shrink-0;
+  @apply w-8 h-8 text-sky-600 dark:text-sky-400 flex-shrink-0;
 }
 
 .my-instructor-metric-content {
@@ -163,20 +150,20 @@
 }
 
 .my-instructor-metric-value {
-  @apply text-xl font-bold text-gray-900;
+  @apply text-xl font-bold text-gray-900 dark:text-gray-50;
 }
 
 .my-instructor-metric-label {
-  @apply text-sm text-gray-600;
+  @apply text-sm text-gray-600 dark:text-gray-400;
 }
 
 .my-instructor-metric-remaining {
-  @apply text-xs text-gray-500 mt-1;
+  @apply text-xs text-gray-500 dark:text-gray-400 mt-1;
 }
 
 /* Cost Section */
 .my-instructor-cost-section {
-  @apply p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border border-amber-200;
+  @apply p-4 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-lg border border-amber-200 dark:border-amber-800;
 }
 
 .my-instructor-cost-header {
@@ -184,11 +171,11 @@
 }
 
 .my-instructor-cost-icon {
-  @apply w-5 h-5 text-amber-600;
+  @apply w-5 h-5 text-amber-600 dark:text-amber-400;
 }
 
 .my-instructor-cost-title {
-  @apply text-sm font-semibold text-gray-900;
+  @apply text-sm font-semibold text-gray-900 dark:text-gray-50;
 }
 
 .my-instructor-cost-details {
@@ -200,32 +187,32 @@
 }
 
 .my-instructor-cost-item-remaining {
-  @apply pt-2 border-t border-amber-200 font-semibold;
+  @apply pt-2 border-t border-amber-200 dark:border-amber-800 font-semibold;
 }
 
 .my-instructor-cost-label {
-  @apply text-gray-700;
+  @apply text-gray-700 dark:text-gray-300;
 }
 
 .my-instructor-cost-value {
-  @apply font-semibold text-gray-900;
+  @apply font-semibold text-gray-900 dark:text-gray-50;
 }
 
 .my-instructor-cost-value-paid {
-  @apply font-semibold text-emerald-600;
+  @apply font-semibold text-emerald-600 dark:text-emerald-400;
 }
 
 .my-instructor-cost-value-remaining {
-  @apply text-lg text-amber-700;
+  @apply text-lg text-amber-700 dark:text-amber-400;
 }
 
 /* Next Lesson */
 .my-instructor-next-lesson {
-  @apply flex items-center gap-3 p-4 bg-blue-50 rounded-lg border border-blue-200;
+  @apply flex items-center gap-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800;
 }
 
 .my-instructor-next-lesson-icon {
-  @apply w-5 h-5 text-blue-600 flex-shrink-0;
+  @apply w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0;
 }
 
 .my-instructor-next-lesson-content {
@@ -233,39 +220,39 @@
 }
 
 .my-instructor-next-lesson-label {
-  @apply text-xs text-gray-600 mb-1;
+  @apply text-xs text-gray-600 dark:text-gray-400 mb-1;
 }
 
 .my-instructor-next-lesson-date {
-  @apply text-sm font-semibold text-gray-900;
+  @apply text-sm font-semibold text-gray-900 dark:text-gray-50;
 }
 
 /* Actions */
 .my-instructor-actions {
-  @apply flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200;
+  @apply flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200 dark:border-slate-700;
 }
 
 .my-instructor-button-primary {
-  @apply flex-1 px-6 py-3 rounded-lg bg-sky-600 text-white font-semibold hover:bg-sky-700 transition-all text-center focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2;
+  @apply flex-1 px-6 py-3 rounded-lg bg-sky-600 dark:bg-sky-700 text-white font-semibold hover:bg-sky-700 dark:hover:bg-sky-800 transition-all text-center focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800;
 }
 
 .my-instructor-button-secondary {
-  @apply flex-1 px-6 py-3 rounded-lg border border-gray-300 font-semibold text-gray-700 hover:bg-gray-50 transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  @apply flex-1 px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800;
 }
 
 /* Empty State */
 .my-instructors-empty {
-  @apply text-center py-16 bg-white rounded-2xl shadow-sm border border-gray-200;
+  @apply text-center py-16 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700;
 }
 
 .my-instructors-empty-icon {
-  @apply mx-auto w-16 h-16 text-gray-400 mb-4;
+  @apply mx-auto w-16 h-16 text-gray-400 dark:text-gray-600 mb-4;
 }
 
 .my-instructors-empty-title {
-  @apply text-xl font-semibold text-gray-900 mb-2;
+  @apply text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2;
 }
 
 .my-instructors-empty-text {
-  @apply text-gray-600 max-w-md mx-auto;
+  @apply text-gray-600 dark:text-gray-400 max-w-md mx-auto;
 }

@@ -35,16 +35,17 @@ function MyInstructorsPage() {
     <div className="my-instructors-page">
       <Navbar />
 
-      <div className="my-instructors-container">
-        {/* Header */}
-        <div className="my-instructors-header">
-          <div>
-            <h1 className="my-instructors-title">My Instructors</h1>
-            <p className="my-instructors-subtitle">
-              Track your progress and manage your flight training
-            </p>
-          </div>
+      {/* Header */}
+      <header className="section-header">
+        <div className="section-container">
+          <h1 className="section-title">My Instructors</h1>
+          <p className="section-subtitle">
+            Track your progress and manage your flight training
+          </p>
         </div>
+      </header>
+
+      <div className="my-instructors-container section-container">
 
         {/* Summary Cards */}
         <div className="my-instructors-summary">

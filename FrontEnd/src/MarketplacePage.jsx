@@ -14,7 +14,7 @@ function MarketplacePage() {
       <Navbar />
 
       {/* Header Section */}
-      <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+      <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-slate-700 shadow-sm">
         <div className="section-container">
           <div className="mb-6">
             <h1 className="section-title">

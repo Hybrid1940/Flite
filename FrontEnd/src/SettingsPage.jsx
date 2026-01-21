@@ -37,12 +37,15 @@ function SettingsPage() {
     <div className="settings-page">
       <Navbar />
       
-      <div className="settings-container">
-        <div className="settings-header">
-          <h1 className="settings-title">Settings</h1>
-          <p className="settings-subtitle">Manage your account settings and preferences</p>
+      {/* Header */}
+      <header className="section-header">
+        <div className="section-container">
+          <h1 className="section-title">Settings</h1>
+          <p className="section-subtitle">Manage your account settings and preferences</p>
         </div>
+      </header>
 
+      <div className="settings-container section-container">
         <div className="settings-content">
           {/* Appearance Section */}
           <section className="settings-section">

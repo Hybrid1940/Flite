@@ -2,7 +2,7 @@
 
 /* Main Navbar Container */
 .navbar {
-  @apply bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm sticky top-0 z-50;
+  @apply bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-slate-700 shadow-sm sticky top-0 z-50;
 }
 
 .navbar-container {
@@ -15,7 +15,7 @@
 
 /* Brand/Logo */
 .navbar-brand {
-  @apply text-xl sm:text-2xl font-bold tracking-tight text-gray-900 hover:text-sky-600 transition-colors;
+  @apply text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors;
 }
 
 /* Navigation Links Container */
@@ -29,26 +29,26 @@
 }
 
 .navbar-link-default {
-  @apply text-gray-700 hover:bg-gray-100 hover:text-sky-600;
+  @apply text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-sky-600 dark:hover:text-sky-400;
 }
 
 .navbar-link-active {
-  @apply bg-sky-100 text-sky-700;
+  @apply bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300;
 }
 
 /* Navigation Button (non-link) */
 .navbar-button {
-  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-sky-600 transition-all;
+  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-sky-600 dark:hover:text-sky-400 transition-all;
 }
 
 /* Icon-only Button (Settings) */
 .navbar-button-icon {
-  @apply flex items-center justify-center w-10 h-10 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-sky-600 transition-all;
+  @apply flex items-center justify-center w-10 h-10 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 hover:text-sky-600 dark:hover:text-sky-400 transition-all;
 }
 
 /* Logout Button */
 .navbar-button-logout {
-  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 transition-all ml-1 sm:ml-2;
+  @apply flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium text-white bg-sky-600 dark:bg-sky-700 hover:bg-sky-700 dark:hover:bg-sky-800 transition-all ml-1 sm:ml-2;
 }
 
 /* Icon Sizing */
